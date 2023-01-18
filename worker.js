@@ -3,7 +3,7 @@
  */
 const
    VERSION = '1.0.0'
-  ,CACHE_NAME = `static-${VERSION}`
+  ,CACHE_NAME = `sw-${VERSION}`
   ,URLS = ['/'];
 
 /* Primeiro evento escutado */
@@ -64,5 +64,3 @@ self.addEventListener('fetch', event => {
 self.addEventListener('message', event => {
   console.log('Received a message From main', JSON.parse(event.data))
 })
-
-console.log('Self Client', self.Client)

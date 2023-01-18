@@ -14,26 +14,8 @@ serviceWorker.register(workerPath, {})
   const worker = result.active;
 
   worker.postMessage('{"name": "worker"}');
-  
-  // worker.addEventListener('message', getServiceWorkerMessage)
 
-  // console.log(result)
-  
-//   serviceWorker.startMessages();
-//   serviceWorker.addEventListener("message", getServiceWorkerMessage);  
-//   serviceWorker.controller.addEventListener('statechange', (event) => {
-//     console.log('SWController state:', event)
-//   })
-  
-//   console.log("SW:", serviceWorker);
-//   console.log("SW:Controller:", serviceWorker.controller);
-  
-//   serviceWorker
-//     .getRegistrations()
-//     .then((result) => console.log("Registrations:", result))
-//     .catch((error) => console.log(error));
-
-
+  // Uma requisição aleatória para demonstração do cache do Service Worker
   fetch('https://jsonplaceholder.typicode.com/posts')
     .then(response => response.json())
     .then(json => console.log(json))
