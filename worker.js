@@ -19,7 +19,7 @@ self.addEventListener('install', async (event) => {
         console.log(error)
       })
   )
-})
+});
 
 /* Segundo evento escutado */
 self.addEventListener("activate", function activator(event) {

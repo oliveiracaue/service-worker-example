@@ -7,7 +7,7 @@
 	"display_override": ["window-control-overlay", "minimal-ui"],
 	"display": "standalone",
 	"scope": ".",
-	"start_url": "/workers",
+	"start_url": "/",
 	"orientation": "portrait",
 	"description": "Service Worker example",
 	"icons": [
